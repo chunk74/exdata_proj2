@@ -17,7 +17,7 @@ aggByYear <- aggregate(Emissions ~ year, NEI, sum)
 barplot(
         (aggByYear$Emissions)/10^6,
         names.arg = aggByYear$year,
-        main = "Total PM 2.5  Annual Emissions", font.main = 3,
+        main = "USA Total PM 2.5 Annual Emissions", font.main = 3,
         xlab = "Years",
         ylab = "Total PM 2.5 emissions (millions of tons)",
         col = "steelblue"
